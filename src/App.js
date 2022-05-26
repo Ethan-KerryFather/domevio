@@ -1,15 +1,15 @@
 import { Route } from "react-router-dom";
-import NavbarComponent from "./Components/NavbarComponent";
 import Home from "./Components/Home";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
+import Guide from "./Components/Guide";
 
 function App() {
   return (
     <div className="App">
-      <Route path="/" component={NavbarComponent} />
+      <Route path="/" component={Home} exact />
 
-      <Route path="/" component={Home} />
+      <Route path="/Guide" component={Guide} />
     </div>
   );
 }

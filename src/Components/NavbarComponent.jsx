@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
-
+import "../style/NavStyle.css";
 import {
   Navbar,
   NavbarBrand,
@@ -42,32 +42,37 @@ export default function NavbarComponent() {
         <Collapse navbar isOpen={isOpen}>
           <Nav className="me-auto" navbar>
             <NavItem
+              style={{ margin: "10px" }}
+              onClick={() => {
+                history.push("/Guide");
+              }}
               id="navHover"
+            >
+              <NavLink>Guide</NavLink>
+            </NavItem>
+
+            <NavItem
               style={{ margin: "10px" }}
               onClick={() => {
                 //history.push("/ExamMarket");
               }}
+              id="navHover"
             >
               <NavLink>REPORT</NavLink>
             </NavItem>
 
             <NavItem
-              id="navHover"
               style={{ margin: "10px" }}
               onClick={() => {
                 //history.push("/ExamSquare/ArticleList");
               }}
+              id="navHover"
             >
               <NavLink>가정폭력 게시판</NavLink>
             </NavItem>
 
             <UncontrolledDropdown inNavbar nav>
-              <DropdownToggle
-                caret
-                nav
-                id="navHover"
-                style={{ margin: "10px" }}
-              >
+              <DropdownToggle caret nav style={{ margin: "10px" }}>
                 Team소개
               </DropdownToggle>
               <DropdownMenu end id="navOptions">
@@ -79,7 +84,9 @@ export default function NavbarComponent() {
                   About Project
                 </DropdownItem>
 
-                <DropdownItem>팀소개</DropdownItem>
+                <DropdownItem onClick={() => history.push("/")}>
+                  팀소개
+                </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
