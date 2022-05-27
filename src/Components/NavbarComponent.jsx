@@ -29,7 +29,7 @@ export default function NavbarComponent() {
         style={{ backgroundColor: "#E6FAFF" }}
       >
         <NavbarBrand href="/" style={{ fontFamily: "fantasy" }}>
-          TEAM domestic violence solution
+          가정폭력
         </NavbarBrand>
         <NavbarToggler
           className="me-2"
