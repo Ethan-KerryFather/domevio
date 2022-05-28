@@ -29,7 +29,7 @@ export default function NavbarComponent() {
         style={{ backgroundColor: "#E6FAFF" }}
       >
         <NavbarBrand href="/" style={{ fontFamily: "fantasy" }}>
-          가정폭력
+          가정폭력 팀
         </NavbarBrand>
         <NavbarToggler
           className="me-2"
@@ -48,27 +48,17 @@ export default function NavbarComponent() {
               }}
               id="navHover"
             >
-              <NavLink>Guide</NavLink>
+              <NavLink>가정폭력 신고 가이드</NavLink>
             </NavItem>
 
             <NavItem
               style={{ margin: "10px" }}
               onClick={() => {
-                //history.push("/ExamMarket");
+                history.push("/ExamSquare/ArticleList");
               }}
               id="navHover"
             >
-              <NavLink>REPORT</NavLink>
-            </NavItem>
-
-            <NavItem
-              style={{ margin: "10px" }}
-              onClick={() => {
-                //history.push("/ExamSquare/ArticleList");
-              }}
-              id="navHover"
-            >
-              <NavLink>가정폭력 게시판</NavLink>
+              <NavLink>가정폭력 신고 게시판</NavLink>
             </NavItem>
 
             <UncontrolledDropdown inNavbar nav>
