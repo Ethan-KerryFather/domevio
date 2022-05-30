@@ -1,6 +1,13 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import "../style/NavStyle.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHouse,
+  faHandcuffs,
+  faHandHolding,
+  faPeopleGroup,
+} from "@fortawesome/free-solid-svg-icons";
 import {
   Navbar,
   NavbarBrand,
@@ -29,7 +36,8 @@ export default function NavbarComponent() {
         style={{ backgroundColor: "#E6FAFF" }}
       >
         <NavbarBrand href="/" style={{ fontFamily: "fantasy" }}>
-          가정폭력 팀
+          DomeVio &nbsp;
+          <FontAwesomeIcon icon={faHouse} />
         </NavbarBrand>
         <NavbarToggler
           className="me-2"
@@ -48,7 +56,10 @@ export default function NavbarComponent() {
               }}
               id="navHover"
             >
-              <NavLink>가정폭력 신고 가이드</NavLink>
+              <NavLink>
+                가정폭력 신고 가이드 &nbsp;
+                <FontAwesomeIcon icon={faHandHolding} />
+              </NavLink>
             </NavItem>
 
             <NavItem
@@ -58,12 +69,16 @@ export default function NavbarComponent() {
               }}
               id="navHover"
             >
-              <NavLink>가정폭력 신고 게시판</NavLink>
+              <NavLink>
+                가정폭력 신고 게시판 &nbsp;
+                <FontAwesomeIcon icon={faHandcuffs} />
+              </NavLink>
             </NavItem>
 
             <UncontrolledDropdown inNavbar nav>
               <DropdownToggle caret nav style={{ margin: "10px" }}>
-                Team소개
+                DomeVio 소개 &nbsp;
+                <FontAwesomeIcon icon={faPeopleGroup} />
               </DropdownToggle>
               <DropdownMenu end id="navOptions">
                 <DropdownItem
@@ -84,7 +99,7 @@ export default function NavbarComponent() {
           <NavbarText
             style={{ fontSize: "xx-small", margin: "20px 10px 10px 0px" }}
           >
-            2022 현대교양 프로젝트
+            2022 현대사회이슈와 공동체리더십
           </NavbarText>
         </Collapse>
       </Navbar>

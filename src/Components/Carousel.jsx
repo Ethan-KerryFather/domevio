@@ -4,8 +4,9 @@ import { UncontrolledCarousel } from "reactstrap";
 
 export default function CarouselComponent() {
   return (
-    <>
-      <UncontrolledCarousel
+    <div>
+      <img id="banner" src="img/banner.png" alt="image1" />
+      {/* <UncontrolledCarousel
         className="carousel"
         items={[
           {
@@ -25,7 +26,7 @@ export default function CarouselComponent() {
             src: "img/2.png",
           },
         ]}
-      />
-    </>
+      /> */}
+    </div>
   );
 }

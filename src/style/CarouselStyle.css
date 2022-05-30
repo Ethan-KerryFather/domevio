@@ -1,6 +1,11 @@
 .carousel {
   width: 80vw;
   height: 10%;
-  display: block;
+  display: inline-block;
   margin: auto;
+}
+
+#banner {
+  width: 80%;
+  max-height: 400px;
 }
