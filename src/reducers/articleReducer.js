@@ -29,7 +29,15 @@ export const updateArticle = (id) => {
 
 const initialState = {
   articleNum: 0,
-  articles: [],
+  articles: [
+    {
+      id: 0,
+      title: "공지",
+      contents:
+        "이 공간은 익명으로 운영되는 게시판입니다. 누구나 자유롭게 사용할 수 있지만, 개인정보를 악용 시엔 커뮤니티 서비스를 이용하시지 못하게 될 수도 있습니다",
+      author: "관리자",
+    },
+  ],
 };
 
 export default function articleReducer(state = initialState, action) {
