@@ -5,12 +5,12 @@ import CarouselComponent from "./Carousel";
 import AOS from "aos";
 function Home() {
   useEffect(() => {
-    AOS.init({});
+    AOS.init();
   });
 
   return (
     <div>
-      <NavbarComponent />
+      <NavbarComponent data-aos="fade-up" data-aos-delay="400" />
       <CarouselComponent data-aos="fade-up" data-aos-delay="300" />
       <br />
       <hr />

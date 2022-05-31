@@ -83,7 +83,7 @@ export default function NavbarComponent() {
               <DropdownMenu end id="navOptions">
                 <DropdownItem
                   onClick={() => {
-                    //history.push("/introduce/Team");
+                    history.push("/ExamSquare/Project");
                   }}
                 >
                   About Project
