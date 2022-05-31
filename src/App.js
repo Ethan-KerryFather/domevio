@@ -9,6 +9,8 @@ import ArticleList from "./Square/ArticleList";
 import writeArticle from "./Square/writeArticle";
 import showArticle from "./Square/ShowArticle";
 import Project from "./Components/Project";
+import Team from "./Components/Team";
+
 function App() {
   return (
     <div className="App">
@@ -21,6 +23,7 @@ function App() {
       <Route path="/ExamSquare/ShowArticle" component={showArticle} />
 
       <Route path="/ExamSquare/Project" component={Project} />
+      <Route path="/ExamSquare/Team" component={Team} />
     </div>
   );
 }

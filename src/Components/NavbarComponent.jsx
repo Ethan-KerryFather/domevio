@@ -89,7 +89,7 @@ export default function NavbarComponent() {
                   About Project
                 </DropdownItem>
 
-                <DropdownItem onClick={() => history.push("/")}>
+                <DropdownItem onClick={() => history.push("/ExamSquare/Team")}>
                   팀소개
                 </DropdownItem>
               </DropdownMenu>
