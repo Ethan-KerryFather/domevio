@@ -1,28 +1,25 @@
 import React, { useState } from "react";
 import FooterComponent from "./Footer";
 import axios from "axios";
-
+import NewsList from "./NewsList";
 export default function NewComponent() {
   const [data, setData] = useState(null);
-  const onClick = () => {
-    axios
-      .get("https://jsonplaceholder.typicode.com/todos/1")
-      .then((response) => {
-        setData(response.data);
-      });
+  const onClick = async () => {
+    try {
+      const response = await axios.get(
+        "https://newsapi.org/v2/top-headlines?country=kr&category=health&apiKey=c26b46932d214b93b655bca244422cfd"
+      );
+      setData(response);
+      console.log(response);
+    } catch (e) {
+      console.log(e);
+    }
   };
 
   return (
     <div>
-      <h1>new Function test</h1>
-      <button onClick={onClick}>불러오기</button>
-      {data && (
-        <textarea
-          rows={7}
-          value={JSON.stringify(data, null, 2)}
-          readOnly={true}
-        />
-      )}
+      <hr />
+      <NewsList />
       <br />
       <br />
       <FooterComponent />

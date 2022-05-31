@@ -84,7 +84,7 @@ export default function NavbarComponent() {
               id="navHover"
             >
               <NavLink>
-                신규기능 Test &nbsp;
+                읽을거리 &nbsp;
                 <FontAwesomeIcon icon={faAtom} />
               </NavLink>
             </NavItem>
