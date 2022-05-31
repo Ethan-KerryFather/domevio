@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { ListGroup, ListGroupItem } from "reactstrap";
 import AOS from "aos";
-
 import "../style/Team.css";
 import FooterComponent from "./Footer";
 export default function Team() {
