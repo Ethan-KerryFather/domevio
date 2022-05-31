@@ -7,6 +7,7 @@ import {
   faHandcuffs,
   faHandHolding,
   faPeopleGroup,
+  faAtom,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   Navbar,
@@ -72,6 +73,19 @@ export default function NavbarComponent() {
               <NavLink>
                 가정폭력 신고 게시판 &nbsp;
                 <FontAwesomeIcon icon={faHandcuffs} />
+              </NavLink>
+            </NavItem>
+
+            <NavItem
+              style={{ margin: "10px" }}
+              onClick={() => {
+                history.push("/ExamSquare/New");
+              }}
+              id="navHover"
+            >
+              <NavLink>
+                신규기능 Test &nbsp;
+                <FontAwesomeIcon icon={faAtom} />
               </NavLink>
             </NavItem>
 

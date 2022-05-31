@@ -1,12 +1,5 @@
 import React, { useEffect } from "react";
-import {
-  Pagination,
-  PaginationItem,
-  PaginationLink,
-  ListGroup,
-  ListGroupItem,
-  Button,
-} from "reactstrap";
+import { ListGroup, ListGroupItem, Button } from "reactstrap";
 import { useSelector } from "react-redux";
 import AOS from "aos";
 import { useHistory } from "react-router-dom";

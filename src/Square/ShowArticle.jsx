@@ -10,6 +10,7 @@ import {
 } from "reactstrap";
 import { useLocation, useHistory } from "react-router-dom";
 import AOS from "aos";
+
 function ShowArticle() {
   useEffect(() => {
     AOS.init({});
@@ -28,6 +29,7 @@ function ShowArticle() {
 
 function ArticleInfo(props) {
   const history = useHistory();
+
   return (
     <div data-aos="flip-right" data-aos-delay="200" data-aos-duration="1500">
       <Card>
