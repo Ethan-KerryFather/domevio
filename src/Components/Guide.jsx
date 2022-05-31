@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import NavbarComponent from "./NavbarComponent";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import FooterComponent from "./Footer";
 
 export default function Guide() {
   useEffect(() => {
@@ -21,6 +22,8 @@ export default function Guide() {
         frameborder="0"
         scrolling="no"
       ></iframe>
+
+      <FooterComponent />
     </div>
   );
 }
