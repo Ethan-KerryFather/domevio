@@ -6,6 +6,9 @@ function ExamSquare() {
   return (
     <div>
       <Board />
+      <br />
+      <br />
+      <br />
       <Footer />
     </div>
   );
