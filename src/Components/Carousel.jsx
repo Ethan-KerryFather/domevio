@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../style/CarouselStyle.css";
-import { UncontrolledCarousel } from "reactstrap";
+import AOS from "aos";
 
 export default function CarouselComponent() {
+  useEffect(() => {
+    AOS.init();
+  });
   return (
     <div>
-      <img id="banner" src="img/banner.png" alt="image1" />
+      <img
+        id="banner"
+        src="img/banner.png"
+        alt="image1"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      />
       {/* <UncontrolledCarousel
         className="carousel"
         items={[
