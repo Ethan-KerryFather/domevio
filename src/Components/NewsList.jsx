@@ -57,11 +57,7 @@ const NewsList = () => {
     <NewsListBlock>
       {articles.map((article) => {
         return (
-          <div
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            data-aos-delay="400"
-          >
+          <div data-aos="flip-up" data-aos-duration="1000" data-aos-delay="400">
             <NewsItem key={article.url} article={article} />
             <br />
             <hr />
