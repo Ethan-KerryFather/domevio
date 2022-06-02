@@ -16,9 +16,9 @@ export default function NewComponent() {
         <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="800">
           정독하시고 행복한 생각만 하세요^^
         </p>
-        <i data-aos="fade-up" data-aos-delay="700" data-aos-duration="800">
-          DomeVio 드림 -- 해당 뉴스들은 실시간으로 업데이트됩니다
-        </i>
+        <p data-aos="fade-up" data-aos-delay="700" data-aos-duration="800">
+          <i>DomeVio 드림 -- 해당 뉴스들은 실시간으로 업데이트됩니다</i>
+        </p>
       </span>
       <hr />
       <NewsList />
