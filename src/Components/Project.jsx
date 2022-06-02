@@ -20,7 +20,7 @@ export default function Project() {
       </h2>
       <hr />
 
-      <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+      <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">
         <span style={{ border: "solid" }}>
           <h3 id="projectIntroduceTitle">DomeVio를 소개합니다!</h3>
           <i>Domestic Violence --> DomeVio</i>
@@ -34,7 +34,7 @@ export default function Project() {
         </span>
       </div>
 
-      <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="700">
+      <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">
         <hr />
         <span style={{ border: "solid" }}>
           <h3 id="projectIntroduceTitle">기능소개</h3>
