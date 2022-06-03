@@ -19,7 +19,7 @@ export default function Guide() {
       </h3>
       <br />
       <iframe
-        src="https://onedrive.live.com/embed?cid=A581D305D3D85C3C&resid=A581D305D3D85C3C%21240&authkey=AIiqZJjNbDbmcyQ&em=2"
+        src="https://onedrive.live.com/embed?cid=A581D305D3D85C3C&resid=A581D305D3D85C3C%21237&authkey=ACTYwi6ZvoHHxyg&em=2"
         width="80%"
         height="600"
         frameborder="0"

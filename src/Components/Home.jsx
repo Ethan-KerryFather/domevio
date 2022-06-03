@@ -19,7 +19,7 @@ function Home() {
       <hr />
       <br />
       <h3 data-aos="fade-up" data-aos-delay="400" id="projectIntroduceTitle">
-        가정폭력 팀 문제해결계획서
+        가정폭력 팀 사회문제해결프로젝트 최종결과보고서
       </h3>
       <p data-aos="fade-up" data-aos-delay="600" id="projectIntroduce">
         가정폭력에 대한 사회적 제도 및 행정적 도움 언급 -> 피보팅 -> 사회행정적
@@ -27,6 +27,15 @@ function Home() {
       </p>
 
       <iframe
+        src="https://onedrive.live.com/embed?cid=A581D305D3D85C3C&resid=A581D305D3D85C3C%21240&authkey=AIiqZJjNbDbmcyQ&em=2"
+        width="80%"
+        height="600"
+        frameborder="0"
+        scrolling="no"
+        data-aos="fade-up"
+        data-aos-delay="500"
+      ></iframe>
+      {/* <iframe
         src="https://onedrive.live.com/embed?cid=A581D305D3D85C3C&resid=A581D305D3D85C3C%21238&authkey=AL9g1NebTNXUuio&em=2"
         width="1000"
         height="800"
@@ -34,7 +43,7 @@ function Home() {
         scrolling="no"
         data-aos="fade-up"
         data-aos-delay="1200"
-      ></iframe>
+      ></iframe> */}
       <FooterComponent />
     </div>
   );
