@@ -13,3 +13,7 @@ api호출 axios
 
 사용 api
 newsAPI
+
+
+final release
+2022-06-06
